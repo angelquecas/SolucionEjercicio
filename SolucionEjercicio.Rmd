@@ -70,5 +70,7 @@ head(diff_Animals2)
 f)  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 
 ```{r}
-
+Animals2[diff_Animals2, ]
+mammals[diff_mammals, ]
+#Se observa que "Animals2" incluye algunos animales adicionales que no aparecen en "mammals", y además se han corregido erratas y cambiado nombres como"Arctic" por "Artic" o "Mole rat" por "Mole".
 ```
