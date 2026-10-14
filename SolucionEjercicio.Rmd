@@ -63,9 +63,12 @@ diff_mammals<- setdiff(rownames(mammals),rownames(Animals2))
 head(diff_mammals)
 
 diff_Animals2<- setdiff(rownames(Animals2),rownames(mammals))
-head(Animals2)
+head(diff_Animals2)
 
 ```
 
-
 f)  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
+
+```{r}
+
+```
