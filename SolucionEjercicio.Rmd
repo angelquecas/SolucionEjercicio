@@ -50,11 +50,22 @@ colnames(Animals2)
 ```
 
 d)  Usa la función intersect y almacena en la variable commonAnimals los aminales que aparezcan en ambos conjuntos.
+
 ```{r}
 commonAnimals<-intersect(rownames(mammals),rownames(Animals2))
 head(commonAnimals)
 ```
 
 e)  Usa setdiff para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
+
+```{r}
+diff_mammals<- setdiff(rownames(mammals),rownames(Animals2))
+head(diff_mammals)
+
+diff_Animals2<- setdiff(rownames(Animals2),rownames(mammals))
+head(Animals2)
+
+```
+
 
 f)  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
