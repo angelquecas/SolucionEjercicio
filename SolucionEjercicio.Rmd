@@ -65,6 +65,7 @@ head(diff_mammals)
 diff_Animals2<- setdiff(rownames(Animals2),rownames(mammals))
 head(diff_Animals2)
 
+#Son 10 animales en total (4 en mammals y 6 en animals2), hay mamíferos en ambos conjuntos, además, en animals2 hay dinosaurios.
 ```
 
 f)  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
@@ -72,5 +73,5 @@ f)  Determina las diferencia entre los animales que no aparecen en ambos conjunt
 ```{r}
 Animals2[diff_Animals2, ]
 mammals[diff_mammals, ]
-#Se observa que "Animals2" incluye algunos animales adicionales que no aparecen en "mammals", y además se han corregido erratas y cambiado nombres como"Arctic" por "Artic" o "Mole rat" por "Mole".
+#Se observa que "Animals2" incluye algunos animales (dinosaurios) adicionales que no aparecen en "mammals", y además se han corregido erratas y cambiado nombres como"Arctic" por "Artic" o "Mole rat" por "Mole".
 ```
